@@ -4,7 +4,7 @@ import './index.css';
 import Welcome from "./Welcome";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Clock from "./Clock";
+import Clock from "./components/Clock";
 import Input from "./Input"
 
 // let user = {
