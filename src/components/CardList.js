@@ -1,37 +1,54 @@
 import React from 'react';
+import Card from "./Card";
 
 class CardList extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = { date: new Date() }
-    }
-    tick(){
-        this.setState({
-            date : new Date()
-        })
+        this.state = {  }
     }
 
+
     componentDidMount() {
-        this.timerId = setInterval(() => this.tick(),1000)
     }
 
     componentWillUnmount() {
-        clearInterval(this.timerId)
 
     }
 
     render() {
-       return <div>
-            <h1>hello </h1>
+       return <div className="row">
 
-            <div>
-                <h1>NOW IT'S {this.state.date.toLocaleTimeString()}</h1>
+            <div className="col-sm-4">
+                <Card
+                    imageUrl="https://via.placeholder.com/600x250,png"
+                    title="Perfect card image"
+                    description="this is my first card description"
+                    link="#"/>
+
             </div>
-        </div>;
+           <div className="col-sm-4">
+               <Card
+                   imageUrl="https://via.placeholder.com/600x250,png"
+                   title="2nd card Perfect image"
+                   description="this is my second card description"
+                   link="#"/>
+
+           </div>
+
+           <div className="col-sm-4">
+               <Card
+                   imageUrl="https://via.placeholder.com/600x250,png"
+                   title="3rd Perfect card image"
+                   description="this is my third card description"
+                   link="#"/>
+
+           </div>
+
+       </div>;
     }
 
 
 }
 
-export default Clock;
+export default CardList;
