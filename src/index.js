@@ -40,8 +40,12 @@ function Greetings(props)
     }
 }
 
-ReactDOM.render(<div> <LoginControl/> <Greetings/></div>,document.getElementById('root'))
-// ReactDOM.render(<div> <CardList/> </div>,document.getElementById('root'))
+var car = {
+    1:"doc",
+    2:"abs"
+}
+console.log(car[1]);
+ReactDOM.render(<div> <CardList/> </div>,document.getElementById('root'))
 
 
 

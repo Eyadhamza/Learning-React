@@ -22,7 +22,7 @@ class CardList extends React.Component{
             <div className="col-sm-4">
                 <Card
                     imageUrl="https://via.placeholder.com/600x250,png"
-                    title="Perfect card image"
+                    title=" card image"
                     description="this is my first card description"
                     link="#"/>
 
